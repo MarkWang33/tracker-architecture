@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-17T08:15:44.115Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="ZC9r3dEH26IERTPIoCHL" version="17.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-17T08:41:43.868Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="5BSb3iWXbeLLtAlc7k0c" version="17.4.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2109" dy="1761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2493" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="-380" y="-180" width="2250" height="3050" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-212" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2210" y="-160" width="2250" height="1680" as="geometry" />
+          <mxGeometry x="2150" y="-260" width="2250" height="1780" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-10" value="DebugTool" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="2680" y="-500" width="160" height="60" as="geometry" />
@@ -343,13 +343,13 @@
         <mxCell id="8rjHVLUGmRl6VgzejmVH-153" value="Tracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="2320" y="-90" width="480" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-154" value="- debugTool:DevbugTool&#xa;- kkTracker:IKKTracker&#xa;- eventTracker:IEventTracker&#xa;- userTracker:IUserTracker&#xa;- userTracker:IUserTracker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-153">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-154" value="- debugTool:DebugTool&#xa;- kkTracker:IKKTracker&#xa;- eventTracker:IEventTracker&#xa;- userTracker:IUserTracker&#xa;- userTracker:IUserTracker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-153">
           <mxGeometry y="26" width="480" height="94" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-155" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-153">
           <mxGeometry y="120" width="480" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-156" value="+ constructor()&#xa;&#xa;+ isInitialize():Boolean&#xa;+ initialize(context:Context)&#xa;+ login(iserId)&#xa;+ logout()&#xa;+ getLoginId:String&#xa;&#xa;+ trackViewOrderPageBookingFormEvent(localData:Data)&#xa;+ trackViewProductPageCheckBtnEVent(localData:Data)&#xa;&#xa;+ setUserProfileProperties(loginChannel:String, currency:String, language:String&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-153">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-156" value="+ constructor(debugTool:DebugTool)&#xa;&#xa;+ isInitialize():Boolean&#xa;+ initialize(context:Context)&#xa;+ login(iserId)&#xa;+ logout()&#xa;+ getLoginId:String&#xa;&#xa;+ trackViewOrderPageBookingFormEvent(localData:Data)&#xa;+ trackViewProductPageCheckBtnEVent(localData:Data)&#xa;&#xa;+ setUserProfileProperties(loginChannel:String, currency:String, language:String&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-153">
           <mxGeometry y="128" width="480" height="212" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-157" value="&lt;&lt;interace&gt;&gt;&#xa;IEventTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -362,7 +362,7 @@
           <mxGeometry y="48" width="350" height="56" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-161" value="&lt;&lt;interace&gt;&gt;&#xa;IOrderTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3705" y="446" width="350" height="74" as="geometry" />
+          <mxGeometry x="3710" y="490" width="350" height="74" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-163" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-161">
           <mxGeometry y="40" width="350" height="8" as="geometry" />
@@ -371,7 +371,7 @@
           <mxGeometry y="48" width="350" height="26" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-172" value="OrderTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3325" y="446" width="330" height="110" as="geometry" />
+          <mxGeometry x="3320" y="490" width="330" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-173" value="- kkEventTracker:IKKEventTracker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-172">
           <mxGeometry y="26" width="330" height="26" as="geometry" />
@@ -397,13 +397,13 @@
         <mxCell id="8rjHVLUGmRl6VgzejmVH-181" value="EventTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="2880" y="220" width="330" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-182" value="&#xa;- kkTracker:IKKTracker&#xa;- orderTracker:IOrderTracker&#xa;- productTracker:IProductTracker&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-181">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-182" value="&#xa;- kkEventTracker:IKKEventTracker,&#xa;- orderTracker:IOrderTracker&#xa;- productTracker:IProductTracker&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-181">
           <mxGeometry y="26" width="330" height="74" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-183" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-181">
           <mxGeometry y="100" width="330" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-184" value="- constructor()&#xa;&#xa;+ trackViewOrderPageBookingFormEvent(localData:Data)&#xa;+ trackViewProductPageCheckBtnEVent(localData:Data)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-181">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-184" value="- constructor(kkEventTracker:IKKEventTracker)&#xa;&#xa;+ trackViewOrderPageBookingFormEvent(localData:Data)&#xa;+ trackViewProductPageCheckBtnEVent(localData:Data)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-181">
           <mxGeometry y="108" width="330" height="72" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-185" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1.003;exitY=0.231;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.54;entryY=-0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-160" target="8rjHVLUGmRl6VgzejmVH-161">
@@ -422,7 +422,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-188" value="ProductTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3325" y="648" width="330" height="110" as="geometry" />
+          <mxGeometry x="3325" y="740" width="330" height="110" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-189" value="- kkEventTracker:IKKEventTracker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-188">
           <mxGeometry y="26" width="330" height="26" as="geometry" />
@@ -434,7 +434,7 @@
           <mxGeometry y="60" width="330" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-192" value="&lt;&lt;interace&gt;&gt;&#xa;IOrderTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3772" y="648" width="350" height="74" as="geometry" />
+          <mxGeometry x="3772" y="740" width="350" height="74" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-193" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-192">
           <mxGeometry y="40" width="350" height="8" as="geometry" />
@@ -452,7 +452,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-197" value="&lt;&lt;interace&gt;&gt;&#xa;IUserTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3875" y="940" width="480" height="74" as="geometry" />
+          <mxGeometry x="3875" y="1095" width="480" height="74" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-198" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-197">
           <mxGeometry y="40" width="480" height="8" as="geometry" />
@@ -461,7 +461,7 @@
           <mxGeometry y="48" width="480" height="26" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-203" value="UserTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2895" y="934" width="520" height="120" as="geometry" />
+          <mxGeometry x="2895" y="1093" width="520" height="120" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-204" value="- kkUserTracker:IKKUserTracker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-203">
           <mxGeometry y="26" width="520" height="26" as="geometry" />
@@ -469,7 +469,7 @@
         <mxCell id="8rjHVLUGmRl6VgzejmVH-205" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-203">
           <mxGeometry y="52" width="520" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-206" value="+ constructor()&#xa;&#xa;+ setUserProfileProperties(loginChannel:String, currency:String, language:String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-203">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-206" value="+ constructor(kkuserTracker:IKKUserTacker)&#xa;&#xa;+ setUserProfileProperties(loginChannel:String, currency:String, language:String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" vertex="1" parent="8rjHVLUGmRl6VgzejmVH-203">
           <mxGeometry y="60" width="520" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-207" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=-0.004;entryY=0.351;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-203" target="8rjHVLUGmRl6VgzejmVH-197">
@@ -507,14 +507,14 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-211" value="App Module" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;shadow=1;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="4360" y="-160" width="100" height="50" as="geometry" />
+          <mxGeometry x="4300" y="-260" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-216" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.91;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.006;exitY=0.233;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-173" target="8rjHVLUGmRl6VgzejmVH-184">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="3100" y="530" as="sourcePoint" />
             <mxPoint x="3260" y="530" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="3180" y="480" />
+              <mxPoint x="3180" y="520" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -523,7 +523,7 @@
             <mxPoint x="3020" y="620" as="sourcePoint" />
             <mxPoint x="3180" y="620" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="3080" y="660" />
+              <mxPoint x="3090" y="755" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -541,7 +541,7 @@
             <mxPoint x="2500" y="990" as="sourcePoint" />
             <mxPoint x="2677" y="250" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="2677" y="973" />
+              <mxPoint x="2677" y="1132" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -572,7 +572,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-228" value="此Module唯一會存取給外部的做使用的class.&lt;br&gt;在裡面會有init內部會用到的sdk, kkEventTracker and kkUserTracker" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-228" value="此Module唯一會存取給外部的做使用的class.&lt;br&gt;在constructor中會初始化用到的sdk, kkEventTracker and kkUserTracker" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-120" y="-130" width="280" height="140" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-229" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -655,6 +655,30 @@
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-253" value="當我傳遞屬性數值，只能接受這五個類型，其他類型不可以傳遞，當我拿值時(getValue)會去判斷，哪一個值有存在" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="1320" y="2450" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-254" value="有繼承interface，所以每一個enum則需要各自實現interface的屬性。" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2460" y="1160" width="309" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-255" value="把KKUserTracker set近來，在這邊的setUserProfileProperties，會去初始化需要傳遞的每個屬性的姓名以及數值，最後傳遞給kkUserTracker去setUserProfileProperties" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2990" y="970" width="309" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-257" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-189" target="8rjHVLUGmRl6VgzejmVH-192">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="3689.9999999999995" y="777.76" as="sourcePoint" />
+            <mxPoint x="3738.02" y="776.24" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-258" value="在這初始化會做一件事&lt;br&gt;1. 把kkEventTracker放進來做使用。&lt;br&gt;&lt;span&gt;&lt;br&gt;當呼叫trackViewOrderPageBookingFormEvent方法，裏面&lt;/span&gt;會去初始化需要傳遞的每個屬性的姓名以及數值，最後傳遞給KKEventTracker去trackEvent" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3413" y="370" width="309" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-259" value="在這初始化會做三件事情&lt;br&gt;1. 把Tracker丟進來的kkTracker，依據介面變成IKKEventTracker傳遞進來。&lt;br&gt;2. 初始化OrderTracker，並把kkEventTracker傳遞進去。&lt;br&gt;2. 初始化ProductTracker，並把kkEventTracker傳遞進去。" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2980" y="90" width="309" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-260" value="在這初始化會做四件事情&lt;br&gt;1. 從外部拿取debugTool&lt;br&gt;2. 初始化kkTracker，把debugTool傳遞進去&lt;br&gt;3. 初始化eventTracker，把kkTracker傳遞進去&lt;br&gt;4.初始化userTracker，把kkTracker傳遞進去" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2680" y="-210" width="309" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-261" value="在這初始化會做一件事情&lt;br&gt;1. 把Tracker丟進來的kkTracker，依據介面變成IKKUserTracker傳遞進來。&lt;br&gt;&lt;br&gt;當初叫&lt;span&gt;setUserProfileProperties，&lt;/span&gt;裏面會去初始化需要傳遞的每個屬性的姓名以及數值，最後傳遞給KKUserTracker的setUserProfileProperties" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2860" y="830" width="309" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
