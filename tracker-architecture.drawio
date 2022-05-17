@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-05-17T08:41:43.868Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="5BSb3iWXbeLLtAlc7k0c" version="17.4.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-17T08:44:55.250Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="HlhShwaTc2wa5KrHAZL-" version="17.4.2" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2493" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4159" dy="2707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -574,9 +574,6 @@
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-228" value="此Module唯一會存取給外部的做使用的class.&lt;br&gt;在constructor中會初始化用到的sdk, kkEventTracker and kkUserTracker" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-120" y="-130" width="280" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-229" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-220" y="-360" width="220" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-230" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.098;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-93" target="8rjHVLUGmRl6VgzejmVH-153">
           <mxGeometry width="160" relative="1" as="geometry">
