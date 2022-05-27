@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-27T08:30:42.159Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="Uc1rdysknG3mkFO2sZ5o" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-27T08:37:12.816Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="XLkB4cCIcTCPzvAGctr1" version="18.0.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2493" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -312,7 +312,7 @@
           <mxGeometry y="128" width="482" height="212" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-157" value="&lt;&lt;interace&gt;&gt;&#xa;IEventTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="4320" y="240" width="622" height="160" as="geometry" />
+          <mxGeometry x="4320" y="130" width="622" height="160" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-159" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" parent="8rjHVLUGmRl6VgzejmVH-157" vertex="1">
           <mxGeometry y="40" width="622" height="8" as="geometry" />
@@ -327,16 +327,16 @@
           <mxGeometry x="2680" y="-560" width="362" height="170" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-181" value="EventTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;shadow=1;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="3640" y="240" width="622" height="260" as="geometry" />
+          <mxGeometry x="3638" y="128" width="622" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-182" value="&#xa;- kkEventTracker:IKKEventTracker,&#xa;- debugTool:DebugTool&#xa;- eventCollectionList:List&lt;EventCollection&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" parent="8rjHVLUGmRl6VgzejmVH-181" vertex="1">
-          <mxGeometry y="26" width="622" height="74" as="geometry" />
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-182" value="&#xa;- kkEventTracker:IKKEventTracker,&#xa;- debugTool:DebugTool&#xa;- eventCollectionList:List&lt;EventCollection&gt;&#xa;- propertyMap:Map&lt;IEventProperty, PropertyValue&gt;&#xa;- parsers:List&lt;BaseParsers&gt;&#xa;- type:IEventType&#xa;- page :IEventPage&#xa;- behavior : IEveentBehavor&#xa;- component: IEventComponent&#xa;- result: IEventResult" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" parent="8rjHVLUGmRl6VgzejmVH-181" vertex="1">
+          <mxGeometry y="26" width="622" height="174" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-183" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;shadow=1;" parent="8rjHVLUGmRl6VgzejmVH-181" vertex="1">
-          <mxGeometry y="100" width="622" height="8" as="geometry" />
+          <mxGeometry y="200" width="622" height="8" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-184" value="- constructor(kkEventTracker:IKKEventTracker, debugTool:DebugTool)&#xa;&#xa;+ setEventName(type:IEventType, page:IEventPage, component:IEventComponent):IEventTracker&#xa;+ setEventName(type:IEventType, behavior:IEventBehavior, result:IEventResult)):IEventTracker&#xa;+ setEventParser(parser:BaseParser)):IEventTracker&#xa;+ setEventProperty(eventProperty:IEventProperty, propertyValue:PropertyValue)):IEventTracker&#xa;+ trackerEvent()&#xa;+ setEventSuperProperty(eventSuperProperty:IEventSuperProperty, propertyValue:PropertyValue):):IEventTracker&#xa;+ trackEventSuperProperties()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;shadow=1;" parent="8rjHVLUGmRl6VgzejmVH-181" vertex="1">
-          <mxGeometry y="108" width="622" height="152" as="geometry" />
+          <mxGeometry y="208" width="622" height="152" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-186" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-181" target="8rjHVLUGmRl6VgzejmVH-157" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -381,12 +381,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-209" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1.003;exitY=0.109;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dQtGnu5FVJgJULsqyYZJ-3" target="8rjHVLUGmRl6VgzejmVH-157" edge="1">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-209" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1.002;exitY=0.622;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="dQtGnu5FVJgJULsqyYZJ-1" target="8rjHVLUGmRl6VgzejmVH-157" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="2880" y="-30" as="sourcePoint" />
             <mxPoint x="3040" y="-30" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="4320" y="40" />
+              <mxPoint x="4320" y="-20" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -402,13 +402,11 @@
         <mxCell id="8rjHVLUGmRl6VgzejmVH-211" value="App Module" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;shadow=1;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="4260" y="-140" width="102" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-218" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.513;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-181" target="dQtGnu5FVJgJULsqyYZJ-3" edge="1">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-218" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1;entryY=0.589;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-181" target="dQtGnu5FVJgJULsqyYZJ-3" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="2730" y="380" as="sourcePoint" />
             <mxPoint x="2890" y="380" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="3308" y="240" />
-            </Array>
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-219" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.003;entryY=1.006;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-204" edge="1" target="dQtGnu5FVJgJULsqyYZJ-3">
@@ -416,7 +414,7 @@
             <mxPoint x="2540" y="990" as="sourcePoint" />
             <mxPoint x="2717" y="250" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="3000" y="1130" />
+              <mxPoint x="2960" y="1130" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -522,13 +520,13 @@
         <mxCell id="8rjHVLUGmRl6VgzejmVH-254" value="有繼承interface，所以每一個enum則需要各自實現interface的屬性。" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2350" y="1028" width="311" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-259" value="在這初始化會做兩件事情&lt;br&gt;1. 把Tracker丟進來的kkTracker，依據介面變成IKKEventTracker傳遞進來。&lt;br&gt;2. 初始化eventCollectionList有哪些，可以知道目前全部埋點的排列組合&lt;br&gt;&lt;br&gt;剩下的方法都是請KKTracker幫忙做事，只是唯一差別是有return自己本身，為了做builder pattern，並且trackEvent and trackEventSuperproperties會從KKTracker回傳文字，在這把文字傳給debugTool印出" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="3655" y="100" width="582" height="140" as="geometry" />
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-259" value="在這初始化會做兩件事情&lt;br&gt;1. 把Tracker丟進來的kkTracker，依據介面變成IKKEventTracker傳遞進來。&lt;br&gt;2. 初始化eventCollectionList有哪些，可以知道目前全部埋點的排列組合&lt;br&gt;&lt;br&gt;再來會依照set 方法，去幫忙儲存一些資訊，在return 本身做一個builder pattern,&lt;br&gt;當我們要trackEvent時，會把這些資訊傳給kkEventTracker去做&lt;br&gt;trackEventSuperProperties也是一樣，然後會從kkEventTracker 拿到的return 用debugTool給印出來" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="3650" y="-10" width="582" height="140" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-260" value="Tracker可以做幾件事情&lt;br&gt;1. 初始化時，從外部取得debugTool，並new一個kkTracker出來使用&lt;br&gt;2. 使用關於ISettingSdk所擁有的方法，並間接呼叫給kkTracker&lt;br&gt;3. 當要做track動作時，需要呼叫trackBuilder去new一個trackBuilder出來，並傳給trackerBuilder debugTool和kkTracker" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2550" y="-260" width="332" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-261" value="在這初始化會做兩件事情&lt;br&gt;1. 把Tracker丟進來的kkTracker，依據介面變成IKKUserTracker傳遞進來。&lt;br&gt;&lt;br&gt;剩下的方法都是請KKTracker幫忙做事，只是唯一差別是有return自己本身，為了做builder pattern，並且trackUserProfileProperties會從KKTracker回傳文字，在這把文字傳給debugTool印出" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-261" value="在這初始化會做兩件事情&lt;br&gt;1. 把Tracker丟進來的kkTracker，依據介面變成IKKUserTracker傳遞進來。&lt;br&gt;&lt;br&gt;再來會依照set 方法，去幫忙儲存一些資訊，在return 本身做一個builder pattern,&lt;br&gt;當我們要trackEvent時，會把這些資訊傳給kkEventTracker去做&lt;br&gt;trackEventSuperProperties也是一樣，然後會從kkEventTracker 拿到的return 用debugTool給印出來" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="3690" y="940" width="582" height="140" as="geometry" />
         </mxCell>
         <mxCell id="k3yQ2vt9n0sb8bPfuxIR-25" value="&lt;&lt;interace&gt;&gt;&#xa;IEventBehavior" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -833,7 +831,7 @@
           <mxGeometry x="-140" y="1550" width="640" height="240" as="geometry" />
         </mxCell>
         <mxCell id="dQtGnu5FVJgJULsqyYZJ-0" value="TrackerBuilder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2990" y="-90" width="620" height="300" as="geometry" />
+          <mxGeometry x="2960" y="-90" width="620" height="300" as="geometry" />
         </mxCell>
         <mxCell id="dQtGnu5FVJgJULsqyYZJ-1" value="- debugTool:DebugTool&#xa;- kkTracker:KKTracker&#xa;- eventTracker:IEventTracker&#xa;- userTracker:IUserTracker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="dQtGnu5FVJgJULsqyYZJ-0">
           <mxGeometry y="26" width="620" height="74" as="geometry" />
