@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-26T12:14:53.118Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="UQSYgi1l6NfDgPHR8PLH" version="18.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-27T07:57:37.107Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="z0LrKq2Pl2Kxj4NdMyU9" version="18.0.7" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2493" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -67,19 +67,19 @@
         <mxCell id="8rjHVLUGmRl6VgzejmVH-64" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-62" vertex="1">
           <mxGeometry y="44" width="730" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-65" value="+ setEventCollectionList(eventCollectionList:List&lt;IEventCollection&gt;?)&#xa;+ setEventName(type:IEventType, page:IEventPage, component:IEventComponent)&#xa;+ setEventName(type:IEventType, behavior:IEventBehavior, result:IEventResult)&#xa;+ setEventParser(parser:BaseParser)&#xa;+ setEventProperty(eventProperty:IEventProperty, propertyValue:PropertyValue)&#xa;+ trackerEvent():String?&#xa;+ setEventSuperProperty(eventSuperProperty:IEventSuperProperty, propertyValue:PropertyValue)&#xa;+ trackEventSuperProperties():String&#xa;+ trackEvent(eventName:String, propertyMap:Map&lt;String, Any&gt;):String?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-62" vertex="1">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-65" value="+ setEventCollectionList(eventCollectionList:List&lt;IEventCollection&gt;?)&#xa;+ trackerEvent(type:IEventType?, page:IEventPage?, component:IEventComponent?,behavior:IEventBehavior?,&#xa; result:IEventResult?,parsers:List&lt;BaseParser&gt;, propertyMap:Map&lt;IEventProperty, PropertyValue&gt;):String?&#xa;+ trackEventSuperProperties(parsers:List&lt;BaseParser&gt;, propertyMap:Map&lt;IEventSuperProperty, PropertyValue&gt;):String&#xa;+ trackEvent(eventName:String, propertyMap:Map&lt;String, Any&gt;):String?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-62" vertex="1">
           <mxGeometry y="52" width="730" height="148" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-69" value="KKEventTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-120" y="778" width="740" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-70" value="- eventCollection:ArraySet&lt;Event&gt;&#xa;- type:IEventType&#xa;- page::IEventPage&#xa;- behavior:IEventBehavior&#xa;- component:IEventComponent&#xa;- result:IEventResult" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-69" vertex="1">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-70" value="empty" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-69" vertex="1">
           <mxGeometry y="26" width="740" height="94" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-71" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-69" vertex="1">
           <mxGeometry y="120" width="740" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-72" value="-  checkEventCollection(eventCOllection:Set&lt;Event&gt;)&#xa;-  checkEventCollectionPlural(eventCollection:Map&lt;Event,List&lt;Event&gt;&gt;)&#xa;-  checkPropertyMapType(proertyMap:Map&lt;out IPorperty, PropertyValue&gt;)&#xa;-  checkPropertyType(property:Map.Entry&lt;IProperty, PropertyValue&gt;)&#xa;-  convertPropertyMap(propertyMap:Map&lt;out IProperty, PropertyValue&gt;):Map&lt;String, Any&gt;&#xa;&#xa;+ setEventCollectionList(eventCollectionList:List&lt;IEventCollection&gt;?)&#xa;+ setEventName(type:IEventType, page:IEventPage, component:IEventComponent)&#xa;+ setEventName(type:IEventType, behavior:IEventBehavior, result:IEventResult)&#xa;+ setEventParser(parser:BaseParser)&#xa;+ setEventProperty(eventProperty:IEventProperty, propertyValue:PropertyValue)&#xa;+ trackerEvent():String?&#xa;+ setEventSuperProperty(eventSuperProperty:IEventSuperProperty, propertyValue:PropertyValue)&#xa;+ trackEventSuperProperties():String&#xa;+ trackEvent(eventName:String, propertyMap:Map&lt;String, Any&gt;):String?&#xa;&#xa;- filterPropertyMap(properties:List&lt;IProperty&gt;?, propertyMap:HashMap&lt;IProperty, PropertyValue&gt;):Map&lt;IProperty, PropertyValue&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-69" vertex="1">
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-72" value="-  checkEventCollection(eventCOllection:Set&lt;Event&gt;)&#xa;-  checkEventCollectionPlural(eventCollection:Map&lt;Event,List&lt;Event&gt;&gt;)&#xa;-  checkPropertyMapType(proertyMap:Map&lt;out IPorperty, PropertyValue&gt;)&#xa;-  checkPropertyType(property:Map.Entry&lt;IProperty, PropertyValue&gt;)&#xa;-  convertPropertyMap(propertyMap:Map&lt;out IProperty, PropertyValue&gt;):Map&lt;String, Any&gt;&#xa;&#xa;+ setEventCollectionList(eventCollectionList:List&lt;IEventCollection&gt;?)&#xa;+ trackerEvent(type:IEventType?, page:IEventPage?, component:IEventComponent?,behavior:IEventBehavior?,&#xa; result:IEventResult?,parsers:List&lt;BaseParser&gt;, propertyMap:Map&lt;IEventProperty, PropertyValue&gt;):String?&#xa;+ trackEventSuperProperties(parsers:List&lt;BaseParser&gt;, propertyMap:Map&lt;IEventSuperProperty, PropertyValue&gt;):String&#xa;+ trackEvent(eventName:String, propertyMap:Map&lt;String, Any&gt;):String?&#xa;&#xa;- filterPropertyMap(properties:List&lt;IProperty&gt;?, propertyMap:HashMap&lt;IProperty, PropertyValue&gt;):Map&lt;IProperty, PropertyValue&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-69" vertex="1">
           <mxGeometry y="128" width="740" height="252" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-74" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-69" target="8rjHVLUGmRl6VgzejmVH-62" edge="1">
@@ -89,13 +89,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-75" value="&lt;&lt;interface&gt;&gt;&#xa;IKKUserTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=44;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="1070.5" y="1800" width="440" height="120" as="geometry" />
+          <mxGeometry x="970" y="1800" width="640" height="120" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-76" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-75" vertex="1">
-          <mxGeometry y="44" width="440" height="8" as="geometry" />
+          <mxGeometry y="44" width="640" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-77" value="+ setUserParser(parser:BaseParser)&#xa;+ setUserProperty(userProperty:IUserProperty, propertyValue:PropertyValue)&#xa;+ trackUserProfileProperties():String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-75" vertex="1">
-          <mxGeometry y="52" width="440" height="68" as="geometry" />
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-77" value="+ trackUserProfileProperties(parsers:List&lt;BaseParser&gt;,propertyMap:Map&lt;IUserProperty, PropertyValue&gt;):String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-75" vertex="1">
+          <mxGeometry y="52" width="640" height="68" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-82" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="8rjHVLUGmRl6VgzejmVH-78" target="8rjHVLUGmRl6VgzejmVH-75" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -459,7 +459,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-233" value="供外部module去存取的interface" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="890" y="-350" width="160" height="90" as="geometry" />
+          <mxGeometry x="870" y="-420" width="160" height="90" as="geometry" />
         </mxCell>
         <mxCell id="8rjHVLUGmRl6VgzejmVH-234" value="在此會實現Mixpanel library串接地方，假設有一天Mixpanel不支援之後，我們可以創建一個新的XXXSDK繼承ISDK，替換掉MixpanelSDK&amp;nbsp;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="300" y="170" width="280" height="110" as="geometry" />
@@ -597,24 +597,6 @@
         </mxCell>
         <mxCell id="k3yQ2vt9n0sb8bPfuxIR-62" value="BaseTracker主要提供給繼承的Tracker幾項功能&lt;br&gt;1.&lt;span style=&quot;&quot;&gt;&amp;nbsp;checkEventCollection and&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;checkEventCollectionPlural&lt;/span&gt;&lt;br&gt;&amp;nbsp;幫忙確定EventCollection有沒有重複的eventName，如果有的話則印出來提醒開發者&lt;br&gt;&lt;br&gt;2.&lt;span style=&quot;&quot;&gt;&amp;nbsp;checkPropertyMapType&amp;nbsp; and&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;checkPropertyType&lt;/span&gt;&lt;br&gt;確定Property的型態對不對，避免Property明明需要String，type但value卻傳number&amp;nbsp; &amp;nbsp; type這件事發生，如果有發生則列印出來提醒使用者&lt;br&gt;&lt;br&gt;3.&amp;nbsp;&lt;span style=&quot;&quot;&gt;convertPropertyMap 則是把Property轉成Mixpanel可以接受的event name是 string, event value則是 string, date, number, boolean&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="k3yQ2vt9n0sb8bPfuxIR-64" vertex="1">
           <mxGeometry x="15" width="470" height="210" as="geometry" />
-        </mxCell>
-        <mxCell id="k3yQ2vt9n0sb8bPfuxIR-65" value="" style="group" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1" connectable="0">
-          <mxGeometry x="-160" y="1660" width="730" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-78" value="KKUserTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="k3yQ2vt9n0sb8bPfuxIR-65" vertex="1">
-          <mxGeometry y="140" width="730" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-79" value="- sdk:ITrackSdk&#xa;- parsers:ArrayList&lt;BaseParser&gt;&#xa;- property:HashMap&lt;IUserProperty, PropertyValue&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-78" vertex="1">
-          <mxGeometry y="26" width="730" height="74" as="geometry" />
-        </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-80" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-78" vertex="1">
-          <mxGeometry y="100" width="730" height="8" as="geometry" />
-        </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-81" value="-  checkEventCollection(eventCOllection:Set&lt;Event&gt;)&#xa;-  checkEventCollectionPlural(eventCollection:Map&lt;Event,List&lt;Event&gt;&gt;)&#xa;-  checkPropertyMapType(proertyMap:Map&lt;out IPorperty, PropertyValue&gt;)&#xa;-  checkPropertyType(property:Map.Entry&lt;IProperty, PropertyValue&gt;)&#xa;-  convertPropertyMap(propertyMap:Map&lt;out IProperty, PropertyValue&gt;):Map&lt;String, Any&gt;&#xa;&#xa;+ setUserParser(parser:BaseParser)&#xa;+ setUserProperty(userProperty:IUserProperty, propertyValue:PropertyValue)&#xa;+ trackUserProfileProperties():String&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-78" vertex="1">
-          <mxGeometry y="108" width="730" height="152" as="geometry" />
-        </mxCell>
-        <mxCell id="8rjHVLUGmRl6VgzejmVH-240" value="KKUserTracker主要會去做下面幾件事情&lt;br&gt;1. setUserParser 儲存各種UserParser&lt;br&gt;2. setUserProperty 儲存並非從Parser來的UserProperty&lt;br&gt;3. trackUserProfileProperties 主要是將Parsers裡的UserProperty拿出來，並做一些Property屬性上的確認後，就傳到mixpanel上" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="k3yQ2vt9n0sb8bPfuxIR-65" vertex="1">
-          <mxGeometry x="20" y="-10" width="380" height="140" as="geometry" />
         </mxCell>
         <mxCell id="k3yQ2vt9n0sb8bPfuxIR-66" value="" style="group" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1" connectable="0">
           <mxGeometry x="200" y="2410" width="620" height="330" as="geometry" />
@@ -832,6 +814,21 @@
               <mxPoint x="2840" y="3960" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-78" value="KKUserTracker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-160" y="1800" width="730" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-79" value="- sdk:ITrackSdk&#xa;- parsers:ArrayList&lt;BaseParser&gt;&#xa;- property:HashMap&lt;IUserProperty, PropertyValue&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-78" vertex="1">
+          <mxGeometry y="26" width="730" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-80" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-78" vertex="1">
+          <mxGeometry y="100" width="730" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-81" value="-  checkEventCollection(eventCOllection:Set&lt;Event&gt;)&#xa;-  checkEventCollectionPlural(eventCollection:Map&lt;Event,List&lt;Event&gt;&gt;)&#xa;-  checkPropertyMapType(proertyMap:Map&lt;out IPorperty, PropertyValue&gt;)&#xa;-  checkPropertyType(property:Map.Entry&lt;IProperty, PropertyValue&gt;)&#xa;-  convertPropertyMap(propertyMap:Map&lt;out IProperty, PropertyValue&gt;):Map&lt;String, Any&gt;&#xa;&#xa;+ trackUserProfileProperties(parsers:List&lt;BaseParser&gt;,propertyMap:Map&lt;IUserProperty, PropertyValue&gt;):String&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="8rjHVLUGmRl6VgzejmVH-78" vertex="1">
+          <mxGeometry y="108" width="730" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="8rjHVLUGmRl6VgzejmVH-240" value="KKUserTracker主要會去做下面步驟&lt;br&gt;1.當上一層呼叫 trackUserProfileProperties，會傳需要的參數 parsers, and propertyMap。&lt;br&gt;* parsers裡面可以拿到property 和 和其value的組合，有些property是UserProperty&lt;br&gt;* propertyMap則是，不需要parser就能拿到的一些UserProperty 和 其value的組合&lt;br&gt;2.&amp;nbsp;trackUserProfileProperties 方法中，會去filter 全部的parsers所有的Property是UserProperty&lt;br&gt;3. filter後的UserProperty 和 其值，會包裝成Map ，其值是打包進PropertyValue裡，確認格式是對的&lt;br&gt;4. 之後加上傳進來的propertyMap&lt;br&gt;5. 去確認 每個 UserProperty 和 PropertyValue的類型是相同的(checkPropertyMapType)&lt;br&gt;6. 把確認後的 UserProperty 和PropertyValue 組合，轉換成 mixpanel 看得懂的型態，UserProperty利用keyName轉換成string，PropertyValue則是轉換成String, Number Boolean List&amp;lt;String&amp;gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;shadow=1;fillColor=none;size=40;position=0.09;position2=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-140" y="1550" width="640" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
